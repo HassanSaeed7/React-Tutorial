@@ -1,5 +1,6 @@
 
 import Expenses from './components/Expenses';
+import NewExpense from './components/NewExpense';
 import './css/main.css';
 
 function App() {
@@ -30,9 +31,15 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = expense => {
+console.log('in app.js')
+console.log(expenses)
+  }
+
   return (
     <div className="App">
       <h1>EXPENSE TRACKER</h1>
+      <NewExpense onDataFetch={addExpenseHandler} />
      <Expenses expenses={expenses}/>
     </div>
   );
