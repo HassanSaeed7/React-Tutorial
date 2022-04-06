@@ -3,12 +3,6 @@ import Card from './Card'
 import ExpenseDate from './ExpenseDate'
 
 const ExpenseItem = (props) => {
-
-  const clickHandler = () => {
-    console.log('first')
-  }
-
-    
   return (
     <Card className="expense-item">
         <ExpenseDate date={props.date}/>
@@ -16,7 +10,7 @@ const ExpenseItem = (props) => {
             <h2>{props.title}</h2>
             <div className="expense-item__price"><h2>${props.amount}</h2></div>
         </div>
-        <button onClick={clickHandler}>Change Title</button>
+      
     </Card>
   )
 }
