@@ -11,6 +11,8 @@ const Button = props => {
   )
 }
 
+export default Button;
+
 // const Button = styled.button`
 //   width: 100%;
 //   font: inherit;
@@ -38,4 +40,4 @@ const Button = props => {
 // `
 
 
-export default Button;
+
